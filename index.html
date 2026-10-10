@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f5f1e9">
   <meta name="description" content="AURA — приложение личной безопасности для Android. Демонстрационная версия.">
+
   <title>AURA — помощь ближе</title>
 
   <style>
@@ -15,9 +16,17 @@
       background: #f5f1e9;
     }
 
-    * { box-sizing: border-box; }
-    body { margin: 0; }
-    a { color: inherit; }
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    a {
+      color: inherit;
+    }
 
     .wrap {
       max-width: 1120px;
@@ -122,6 +131,11 @@
     .button:hover {
       background: #34584c;
       transform: translateY(-2px);
+    }
+
+    .button:focus-visible {
+      outline: 3px solid #db704b;
+      outline-offset: 4px;
     }
 
     .small {
@@ -277,7 +291,9 @@
         padding-bottom: 25px;
       }
 
-      .phone-area { min-height: 380px; }
+      .phone-area {
+        min-height: 380px;
+      }
 
       .phone {
         transform: scale(.75) rotate(-7deg);
@@ -293,23 +309,45 @@
         gap: 30px;
       }
 
-      .note { display: block; }
-      h1 { font-size: 55px; }
+      .note {
+        display: block;
+      }
+
+      h1 {
+        font-size: 55px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      h1 {
+        font-size: 46px;
+      }
+
+      .button {
+        width: 100%;
+        padding: 17px 16px;
+      }
     }
   </style>
 </head>
 
 <body>
+
   <header class="wrap nav">
     <div class="logo">
       <span class="mark">A</span>
       AURA
     </div>
-    <div class="tag">Android · Demo</div>
+
+    <div class="tag">
+      Android · Demo
+    </div>
   </header>
 
   <main>
+
     <section class="wrap hero">
+
       <div>
         <div class="eyebrow">
           Личная безопасность · Тестовая версия
@@ -328,37 +366,60 @@
         </p>
 
         <div class="actions">
+
+          <!-- ПРАВИЛЬНАЯ ССЫЛКА НА APK -->
           <a
             class="button"
-            href="https://github.com/BekboDarbanov596/AURA/releases/download/v1.0-demo/AURA-background-push-debug.apk"
+            href="https://github.com/BekboDarbanov596/AURA/releases/download/v1.0-dem/AURA-background-push-debug.apk"
+            aria-label="Скачать демонстрационную версию AURA для Android"
           >
             ↓ &nbsp; Скачать AURA для Android
           </a>
 
-          <span class="small">APK · 37,3 МБ</span>
+          <span class="small">
+            APK · 37,3 МБ
+          </span>
+
         </div>
 
         <div class="download-info">
           Тестовая debug-сборка для демонстрации.
           Только Android.
         </div>
+
       </div>
 
       <div class="phone-area">
+
         <div class="halo"></div>
 
         <div class="phone">
           <div class="camera"></div>
-          <div class="screen-brand">AURA</div>
-          <div class="status">Личная безопасность</div>
-          <div class="circle">SOS<br>+ / −</div>
-          <div class="pill">Близкие на связи</div>
+
+          <div class="screen-brand">
+            AURA
+          </div>
+
+          <div class="status">
+            Личная безопасность
+          </div>
+
+          <div class="circle">
+            SOS<br>+ / −
+          </div>
+
+          <div class="pill">
+            Близкие на связи
+          </div>
         </div>
+
       </div>
+
     </section>
 
     <section class="features">
       <div class="wrap featuregrid">
+
         <div class="feature">
           <div class="tag">01 / Быстрый сигнал</div>
           <h3>Без открытия экрана</h3>
@@ -385,28 +446,41 @@
             новое направление развития экосистемы.
           </p>
         </div>
+
       </div>
     </section>
 
     <section class="wrap note">
+
       <div>
-        <div class="eyebrow">Перед установкой</div>
-        <h2>Демонстрационная сборка</h2>
+        <div class="eyebrow">
+          Перед установкой
+        </div>
+
+        <h2>
+          Демонстрационная сборка
+        </h2>
       </div>
 
       <p>
         Это тестовая версия, распространяемая вне Google Play.
         Android может запросить подтверждение установки APK
         из выбранного источника. Устанавливайте приложение
-        только если доверяете отправителю. Функции зависят
-        от разрешений, доступности связи и совместимости
-        устройства. Приложение не заменяет экстренные службы.
+        только если доверяете отправителю.
+
+        Функции зависят от разрешений, доступности связи
+        и совместимости устройства.
+
+        Приложение не заменяет экстренные службы.
       </p>
+
     </section>
+
   </main>
 
   <footer class="wrap footer">
     AURA · Hackathon demo · Android
   </footer>
+
 </body>
 </html>
