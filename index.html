@@ -1,4 +1,412 @@
+
 <!doctype html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f5f1e9"><meta name="description" content="AURA — приложение личной безопасности для Android. Демонстрационная версия."><title>AURA — помощь ближе</title><style>
-:root{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#232b29;background:#f5f1e9}*{box-sizing:border-box}body{margin:0}a{color:inherit}.wrap{max-width:1120px;margin:auto;padding:28px 32px}.nav{display:flex;justify-content:space-between;align-items:center}.logo{display:flex;align-items:center;gap:12px;font-size:21px;font-weight:800;letter-spacing:.12em}.mark{width:39px;height:39px;border-radius:14px;background:#db704b;display:grid;place-items:center;color:#fff;font-weight:800;letter-spacing:0}.tag{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#69726c;font-weight:700}.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center;padding-top:85px;padding-bottom:80px}.eyebrow{color:#b05b3e;font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:800}h1{font-size:clamp(48px,7vw,86px);line-height:1.03;letter-spacing:-.065em;margin:19px 0 23px;max-width:750px}h1 em{font-style:normal;color:#ca6847}.intro{font-size:19px;line-height:1.7;color:#5c6660;max-width:570px}.actions{display:flex;flex-wrap:wrap;gap:15px;align-items:center;margin-top:34px}.button{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;background:#253d36;color:#fff;border-radius:15px;padding:18px 26px;font-weight:750;box-shadow:0 9px 24px #253d3620}.button:hover{background:#34584c}.small{font-size:13px;color:#7a807a}.phone-area{min-height:480px;display:grid;place-items:center;position:relative}.halo{width:400px;height:400px;max-width:100%;border-radius:50%;background:#e6ded1;position:absolute}.phone{width:242px;height:468px;border:9px solid #263a35;border-radius:38px;background:#fffaf2;box-shadow:25px 33px 45px #4b453e24;z-index:1;transform:rotate(-7deg);padding:23px 17px;position:relative}.camera{width:56px;height:13px;border-radius:9px;background:#263a35;margin:-13px auto 45px}.screen-brand{font-size:17px;font-weight:850;letter-spacing:.12em}.status{font-size:12px;color:#748077;margin-top:9px}.circle{height:145px;width:145px;border-radius:50%;background:#e5efe8;border:1px solid #c9ded1;display:grid;place-items:center;text-align:center;margin:35px auto 20px;color:#2c5642;font-weight:800;font-size:18px}.pill{background:#253d36;color:#fff;text-align:center;padding:14px;border-radius:13px;font-size:13px;font-weight:750}.features{background:#fffdf8;border-top:1px solid #e7e2d8;border-bottom:1px solid #e7e2d8}.featuregrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;padding-top:52px;padding-bottom:56px}.feature{border-left:2px solid #d87955;padding:0 22px}.feature h3{font-size:19px;margin:9px 0}.feature p{font-size:14px;line-height:1.7;color:#68716c;margin:0}.note{padding-top:40px;padding-bottom:45px;display:flex;gap:24px;justify-content:space-between;align-items:flex-start}.note p{max-width:750px;line-height:1.7;color:#5c6660;font-size:14px}.footer{border-top:1px solid #ded9d0;padding-top:22px;padding-bottom:30px;color:#858a83;font-size:12px}.download-info{margin-top:15px;font-size:12px;color:#7d827c}@media(max-width:760px){.wrap{padding-left:22px;padding-right:22px}.hero{grid-template-columns:1fr;gap:10px;padding-top:48px;padding-bottom:25px}.phone-area{min-height:380px}.phone{transform:scale(.75) rotate(-7deg)}.halo{width:310px;height:310px}.featuregrid{grid-template-columns:1fr;gap:30px}.note{display:block}h1{font-size:55px}}
-</style></head><body><header class="wrap nav"><div class="logo"><span class="mark">A</span>AURA</div><div class="tag">Android · Demo</div></header><main><section class="wrap hero"><div><div class="eyebrow">Личная безопасность · Тестовая версия</div><h1>Помощь<br><em>ближе,</em><br>чем кажется.</h1><p class="intro">AURA помогает быстро отправить сигнал тревоги доверенным людям. Даже когда телефон заблокирован и приложение свёрнуто.</p><div class="actions"><a class="button" href="download/AURA-demo.apk" download>↓ &nbsp; Скачать AURA для Android</a><span class="small">APK · около 38 МБ</span></div><div class="download-info">Тестовая debug-сборка для демонстрации. Только Android.</div></div><div class="phone-area"><div class="halo"></div><div class="phone"><div class="camera"></div><div class="screen-brand">AURA</div><div class="status">Личная безопасность</div><div class="circle">SOS<br>+ / −</div><div class="pill">Близкие на связи</div></div></div></section><section class="features"><div class="wrap featuregrid"><div class="feature"><div class="tag">01 / Быстрый сигнал</div><h3>Без открытия экрана</h3><p>Специальная комбинация физических кнопок громкости позволяет инициировать тревогу.</p></div><div class="feature"><div class="tag">02 / Доверие</div><h3>Связь с близкими</h3><p>Подключайте доверенных людей и используйте предусмотренные приложением способы связи.</p></div><div class="feature"><div class="tag">03 / Развитие</div><h3>AURA Family</h3><p>Семейные круги, карта и безопасные зоны — новое направление развития экосистемы.</p></div></div></section><section class="wrap note"><div><div class="eyebrow">Перед установкой</div><h2>Демонстрационная сборка</h2></div><p>Это тестовая версия, распространяемая вне Google Play. Android может запросить подтверждение установки APK из выбранного источника. Устанавливайте приложение только если доверяете отправителю. Функции зависят от разрешений, доступности связи и совместимости устройства. Приложение не заменяет экстренные службы.</p></section></main><footer class="wrap footer">AURA · Hackathon demo · Android</footer></body></html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f1e9">
+  <meta name="description" content="AURA — приложение личной безопасности для Android. Демонстрационная версия.">
+  <title>AURA — помощь ближе</title>
+
+  <style>
+    :root {
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #232b29;
+      background: #f5f1e9;
+    }
+
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    a { color: inherit; }
+
+    .wrap {
+      max-width: 1120px;
+      margin: auto;
+      padding: 28px 32px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: .12em;
+    }
+
+    .mark {
+      width: 39px;
+      height: 39px;
+      border-radius: 14px;
+      background: #db704b;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .tag {
+      font-size: 12px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: #69726c;
+      font-weight: 700;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 55px;
+      align-items: center;
+      padding-top: 85px;
+      padding-bottom: 80px;
+    }
+
+    .eyebrow {
+      color: #b05b3e;
+      font-size: 12px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    h1 {
+      font-size: clamp(48px, 7vw, 86px);
+      line-height: 1.03;
+      letter-spacing: -.065em;
+      margin: 19px 0 23px;
+      max-width: 750px;
+    }
+
+    h1 em {
+      font-style: normal;
+      color: #ca6847;
+    }
+
+    .intro {
+      font-size: 19px;
+      line-height: 1.7;
+      color: #5c6660;
+      max-width: 570px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      align-items: center;
+      margin-top: 34px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      background: #253d36;
+      color: #fff;
+      border-radius: 15px;
+      padding: 18px 26px;
+      font-weight: 750;
+      box-shadow: 0 9px 24px #253d3620;
+      transition: background .2s, transform .2s;
+    }
+
+    .button:hover {
+      background: #34584c;
+      transform: translateY(-2px);
+    }
+
+    .small {
+      font-size: 13px;
+      color: #7a807a;
+    }
+
+    .phone-area {
+      min-height: 480px;
+      display: grid;
+      place-items: center;
+      position: relative;
+    }
+
+    .halo {
+      width: 400px;
+      height: 400px;
+      max-width: 100%;
+      border-radius: 50%;
+      background: #e6ded1;
+      position: absolute;
+    }
+
+    .phone {
+      width: 242px;
+      height: 468px;
+      border: 9px solid #263a35;
+      border-radius: 38px;
+      background: #fffaf2;
+      box-shadow: 25px 33px 45px #4b453e24;
+      z-index: 1;
+      transform: rotate(-7deg);
+      padding: 23px 17px;
+      position: relative;
+    }
+
+    .camera {
+      width: 56px;
+      height: 13px;
+      border-radius: 9px;
+      background: #263a35;
+      margin: -13px auto 45px;
+    }
+
+    .screen-brand {
+      font-size: 17px;
+      font-weight: 850;
+      letter-spacing: .12em;
+    }
+
+    .status {
+      font-size: 12px;
+      color: #748077;
+      margin-top: 9px;
+    }
+
+    .circle {
+      height: 145px;
+      width: 145px;
+      border-radius: 50%;
+      background: #e5efe8;
+      border: 1px solid #c9ded1;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      margin: 35px auto 20px;
+      color: #2c5642;
+      font-weight: 800;
+      font-size: 18px;
+    }
+
+    .pill {
+      background: #253d36;
+      color: #fff;
+      text-align: center;
+      padding: 14px;
+      border-radius: 13px;
+      font-size: 13px;
+      font-weight: 750;
+    }
+
+    .features {
+      background: #fffdf8;
+      border-top: 1px solid #e7e2d8;
+      border-bottom: 1px solid #e7e2d8;
+    }
+
+    .featuregrid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      padding-top: 52px;
+      padding-bottom: 56px;
+    }
+
+    .feature {
+      border-left: 2px solid #d87955;
+      padding: 0 22px;
+    }
+
+    .feature h3 {
+      font-size: 19px;
+      margin: 9px 0;
+    }
+
+    .feature p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #68716c;
+      margin: 0;
+    }
+
+    .note {
+      padding-top: 40px;
+      padding-bottom: 45px;
+      display: flex;
+      gap: 24px;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .note p {
+      max-width: 750px;
+      line-height: 1.7;
+      color: #5c6660;
+      font-size: 14px;
+    }
+
+    .footer {
+      border-top: 1px solid #ded9d0;
+      padding-top: 22px;
+      padding-bottom: 30px;
+      color: #858a83;
+      font-size: 12px;
+    }
+
+    .download-info {
+      margin-top: 15px;
+      font-size: 12px;
+      color: #7d827c;
+    }
+
+    @media (max-width: 760px) {
+      .wrap {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding-top: 48px;
+        padding-bottom: 25px;
+      }
+
+      .phone-area { min-height: 380px; }
+
+      .phone {
+        transform: scale(.75) rotate(-7deg);
+      }
+
+      .halo {
+        width: 310px;
+        height: 310px;
+      }
+
+      .featuregrid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .note { display: block; }
+      h1 { font-size: 55px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="wrap nav">
+    <div class="logo">
+      <span class="mark">A</span>
+      AURA
+    </div>
+    <div class="tag">Android · Demo</div>
+  </header>
+
+  <main>
+    <section class="wrap hero">
+      <div>
+        <div class="eyebrow">
+          Личная безопасность · Тестовая версия
+        </div>
+
+        <h1>
+          Помощь<br>
+          <em>ближе,</em><br>
+          чем кажется.
+        </h1>
+
+        <p class="intro">
+          AURA помогает быстро отправить сигнал тревоги
+          доверенным людям. Даже когда телефон заблокирован
+          и приложение свёрнуто.
+        </p>
+
+        <div class="actions">
+          <a
+            class="button"
+            href="https://github.com/BekboDarbanov596/AURA/releases/download/v1.0-demo/AURA-background-push-debug.apk"
+          >
+            ↓ &nbsp; Скачать AURA для Android
+          </a>
+
+          <span class="small">APK · 37,3 МБ</span>
+        </div>
+
+        <div class="download-info">
+          Тестовая debug-сборка для демонстрации.
+          Только Android.
+        </div>
+      </div>
+
+      <div class="phone-area">
+        <div class="halo"></div>
+
+        <div class="phone">
+          <div class="camera"></div>
+          <div class="screen-brand">AURA</div>
+          <div class="status">Личная безопасность</div>
+          <div class="circle">SOS<br>+ / −</div>
+          <div class="pill">Близкие на связи</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="wrap featuregrid">
+        <div class="feature">
+          <div class="tag">01 / Быстрый сигнал</div>
+          <h3>Без открытия экрана</h3>
+          <p>
+            Специальная комбинация физических кнопок
+            громкости позволяет инициировать тревогу.
+          </p>
+        </div>
+
+        <div class="feature">
+          <div class="tag">02 / Доверие</div>
+          <h3>Связь с близкими</h3>
+          <p>
+            Подключайте доверенных людей и используйте
+            предусмотренные приложением способы связи.
+          </p>
+        </div>
+
+        <div class="feature">
+          <div class="tag">03 / Развитие</div>
+          <h3>AURA Family</h3>
+          <p>
+            Семейные круги, карта и безопасные зоны —
+            новое направление развития экосистемы.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap note">
+      <div>
+        <div class="eyebrow">Перед установкой</div>
+        <h2>Демонстрационная сборка</h2>
+      </div>
+
+      <p>
+        Это тестовая версия, распространяемая вне Google Play.
+        Android может запросить подтверждение установки APK
+        из выбранного источника. Устанавливайте приложение
+        только если доверяете отправителю. Функции зависят
+        от разрешений, доступности связи и совместимости
+        устройства. Приложение не заменяет экстренные службы.
+      </p>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    AURA · Hackathon demo · Android
+  </footer>
+</body>
+</html>
